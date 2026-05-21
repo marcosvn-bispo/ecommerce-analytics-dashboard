@@ -31,6 +31,10 @@ A aplicação processa registros de vendas de um e-commerce (dataset Superstore 
 - Pandas (Manipulação e agregação avançada de dados tabulares em memória)
 - SQLite3 (Banco de dados relacional leve e embutido)
 
+## 📊 Fonte de Dados
+
+Os dados utilizados neste projeto são baseados no **Superstore Sales Dataset**, um conjunto de dados público e clássico amplamente utilizado na comunidade de dados (frequentemente encontrado no [Kaggle](https://www.kaggle.com/)). O arquivo bruto (CSV) simula transações, lucros, categorias e clientes de uma rede varejista norte-americana durante os anos de 2018 a 2021. Esses dados são utilizados pelo script de ingestão para popular o banco de dados local.
+
 ## ⚙️ Como Executar Localmente
 
 ### 1. Preparando o Backend

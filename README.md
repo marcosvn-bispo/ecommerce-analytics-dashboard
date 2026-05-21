@@ -64,4 +64,4 @@ Neste projeto, apliquei conceitos avançados de tratamento de dados:
 - Otimização do uso de memória no backend com queries SQL aliadas a filtros do Pandas antes da serialização em JSON.
 
 ---
-Desenvolvido com dedicação focado em performance, análise de dados e design de interfaces. 
+Desenvolvido com dedicação, focado em performance, análise de dados e design de interfaces. 

@@ -29,7 +29,7 @@ const Dashboard = () => {
           <span style={{ fontWeight: 600 }}>Filtros:</span>
         </div>
         
-        <select value={year} onChange={e => setYear(e.target.value)} className="search-input" style={{ width: '150px', backgroundColor: '#1e293b', color: '#f8fafc', border: '1px solid rgba(255,255,255,0.1)' }}>
+        <select value={year} onChange={e => setYear(e.target.value)} className="search-input" style={{ width: '150px' }}>
           <option value="all">Todos os Anos</option>
           <option value="2018">2018</option>
           <option value="2019">2019</option>
@@ -37,7 +37,7 @@ const Dashboard = () => {
           <option value="2021">2021</option>
         </select>
 
-        <select value={region} onChange={e => setRegion(e.target.value)} className="search-input" style={{ width: '150px', backgroundColor: '#1e293b', color: '#f8fafc', border: '1px solid rgba(255,255,255,0.1)' }}>
+        <select value={region} onChange={e => setRegion(e.target.value)} className="search-input" style={{ width: '150px' }}>
           <option value="all">Todas as Regiões</option>
           <option value="East">East</option>
           <option value="West">West</option>
@@ -91,12 +91,10 @@ const Dashboard = () => {
             <h3 className="chart-title">Receita vs Lucro (Evolução Temporal)</h3>
             <ResponsiveContainer key={`line-${year}-${region}`} width="100%" height={300}>
               <LineChart data={salesTrend}>
-                <CartesianGrid strokeDasharray="3 3" stroke="rgba(255,255,255,0.05)" vertical={false} />
-                <XAxis dataKey="month" stroke="#94a3b8" />
-                <YAxis stroke="#94a3b8" tickFormatter={(value) => `$${(value/1000)}k`} />
+                <CartesianGrid strokeDasharray="3 3" stroke="var(--border)" vertical={false} />
+                <XAxis dataKey="month" stroke="var(--text-muted)" />
+                <YAxis stroke="var(--text-muted)" tickFormatter={(value) => `$${(value/1000)}k`} />
                 <Tooltip 
-                  contentStyle={{ backgroundColor: '#1e293b', border: 'none', borderRadius: '8px' }}
-                  itemStyle={{ color: '#f1f5f9' }}
                   formatter={(value) => new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' }).format(value)}
                 />
                 <Legend />
@@ -126,7 +124,6 @@ const Dashboard = () => {
                   ))}
                 </Pie>
                 <Tooltip 
-                  contentStyle={{ backgroundColor: '#1e293b', border: 'none', borderRadius: '8px' }}
                   formatter={(value) => new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' }).format(value)}
                 />
                 <Legend />

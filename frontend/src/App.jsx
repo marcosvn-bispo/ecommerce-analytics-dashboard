@@ -39,8 +39,10 @@ function App() {
           </div>
         </header>
         
-        {activeTab === 'dashboard' && <Dashboard />}
-        {activeTab === 'users' && <Users />}
+        <div className="dashboard-body">
+          {activeTab === 'dashboard' && <Dashboard />}
+          {activeTab === 'users' && <Users />}
+        </div>
       </div>
     </div>
   )

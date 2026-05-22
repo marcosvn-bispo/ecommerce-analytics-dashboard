@@ -59,7 +59,7 @@ O painel estará disponível em `http://localhost:5173`
 ## 📈 Lições Aprendidas / Destaques Técnicos
 
 Neste projeto, apliquei conceitos avançados de tratamento de dados:
-- Tratamento de campos numéricos problemáticos em datasets reais (como formatações de LTV para o padrão Excel BR).
+- Tratamento de campos numéricos problemáticos em datasets reais (como formatações de LTV para o padrão Excel).
 - Resolução de gargalos de renderização gráfica ao transitar entre filtros com volumes de dados heterogêneos.
 - Otimização do uso de memória no backend com queries SQL aliadas a filtros do Pandas antes da serialização em JSON.
 

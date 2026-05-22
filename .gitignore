@@ -1,0 +1,20 @@
+# Python / Backend
+backend/venv/
+backend/__pycache__/
+backend/*.pyc
+backend/*.db
+.env
+__pycache__/
+
+# Node / Frontend (Vite)
+frontend/node_modules/
+frontend/dist/
+frontend/dist-ssr/
+frontend/.env*
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS Files
+.DS_Store
+Thumbs.db
